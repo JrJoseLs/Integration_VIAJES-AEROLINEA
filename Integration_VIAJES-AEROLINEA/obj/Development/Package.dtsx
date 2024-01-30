@@ -1,0 +1,2581 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/2/2022 4:15:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-FCT62AU"
+  DTS:CreatorName="DESKTOP-FCT62AU\junio"
+  DTS:DTSID="{2D242C5C-3851-42B2-A8C5-0D69D0EC25C3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{3C82A9B8-087F-4DEA-A2A7-5AE3B68DF622}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Conexion a archivo plano]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0C6504ED-DC2E-4759-BFC4-797E7D786CA8}"
+      DTS:ObjectName="Conexion a archivo plano">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\junio\OneDrive\Escritorio\12 cua\ISO931-INTELIGENCIA DE NEGOCIOS-SEM\Class 2\Tarea y Project\Pract 1 VIAJES AEROLINEA\Aerolinea.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pasaporte"
+              DTS:DTSID="{F1DBF52C-AA9F-4817-ADD9-B116096F5FC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nombre"
+              DTS:DTSID="{F2C26863-8E59-491C-B710-6D4BC489C73E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido"
+              DTS:DTSID="{A1073FBF-81FE-4917-BA73-2A0C050321F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sexo"
+              DTS:DTSID="{1DA14C82-43F1-420C-920E-B8DAC5046825}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pasaje"
+              DTS:DTSID="{EBFEDDF1-C49A-47A6-A9B2-29AFF4DF22D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Destino"
+              DTS:DTSID="{63487117-A5EA-4B94-8361-482489B0BD37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumAvion"
+              DTS:DTSID="{45C95E6A-7486-41E4-A984-3D2ABFF54F62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha-Vuelo"
+              DTS:DTSID="{7F0E283A-2C76-4EFE-9A2D-AAB7899E8B0E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1B520D26-482E-4174-BE33-34B6B3BD78F7}"
+      DTS:ObjectName="csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\junio\OneDrive\Escritorio\12 cua\ISO931-INTELIGENCIA DE NEGOCIOS-SEM\Class 2\Tarea y Project\Pract 1 VIAJES AEROLINEA\Aerolinea.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido"
+              DTS:DTSID="{664F6A4D-3D6C-4556-89BC-0D405096BE18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nombre"
+              DTS:DTSID="{21485F39-EFE6-49BF-A38B-3E8F09303ADD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" Pasaport"
+              DTS:DTSID="{CD1CC312-87F1-480E-A7C5-6E52B6D21394}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sexo"
+              DTS:DTSID="{B50B07EA-C9FE-4AC1-AF78-28E7FD816F89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pasaje"
+              DTS:DTSID="{5298081D-1B81-4D23-AF29-579BF9740A9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha-Vuelo"
+              DTS:DTSID="{03CBDB87-66D6-4EF8-9EC2-AE584AD3D25F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Destino"
+              DTS:DTSID="{B984EF45-5B24-43C6-89A2-D35DD6E50566}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumAvion"
+              DTS:DTSID="{186FCC8A-59DC-44F0-B242-1EEB5A61A1E5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CBE71BE5-2F27-4D2A-9D3B-349C22E603E0}"
+      DTS:ObjectName="Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\junio\OneDrive\Escritorio\12 cua\ISO931-INTELIGENCIA DE NEGOCIOS-SEM\Class 2\Tarea y Project\Pract 1 VIAJES AEROLINEA\Aerolinea.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+      DTS:ObjectName="LocalHost.Aerolinea_ISO931">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Aerolinea_ISO931;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TXT]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{08D92E86-D7D3-4E4E-9A41-5FB78FF20727}"
+      DTS:ObjectName="TXT">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\junio\OneDrive\Escritorio\12 cua\ISO931-INTELIGENCIA DE NEGOCIOS-SEM\Class 2\Tarea y Project\Pract 1 VIAJES AEROLINEA\Aerolinea.xls">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pasaje"
+              DTS:DTSID="{9CAB0FD7-DAE4-4AC6-A30F-E0AE682B8EDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pasaport"
+              DTS:DTSID="{8E7926D9-5E1D-42E3-AF58-1203C2AF2736}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Destino"
+              DTS:DTSID="{3A7796CA-21A5-43E2-A600-FA0B107FF149}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumAvion"
+              DTS:DTSID="{1E5DFF1E-A240-45E9-818D-ED3F51951FC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nombre"
+              DTS:DTSID="{EC37DFDF-D685-4CC1-ADA4-C7956D62A8D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido"
+              DTS:DTSID="{31D9665B-86E0-411A-B6BD-B6EFC29B9C6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sexo"
+              DTS:DTSID="{CC9DBB99-5C3A-4128-85BF-DC97815F0CD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha-Vuelo"
+              DTS:DTSID="{A699B785-AEAB-432B-9464-F6F2A43111CF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Bitacora Correcta"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{2304E3FF-C858-4BF8-BF39-8155AADAFCE9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bitacora Correcta"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+          SQLTask:SqlStatementSource="Insert into bitacora(FechaHora, Origen, Estatus)&#xA;values (getdate(), 'TXT','CORRECTO')&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Bitacora Correcta csv"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{8fa84ff5-539a-4e53-b124-3e8fdb643195}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bitacora Correcta csv"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+          SQLTask:SqlStatementSource="Insert into bitacora(FechaHora, Origen, Estatus)&#xA;values (getdate(), 'csv','CORRECTO')&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Bitacora Correcta EXCEL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{f937bafa-c7fb-460e-91b6-7caca6197167}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bitacora Correcta EXCEL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+          SQLTask:SqlStatementSource="Insert into bitacora(FechaHora, Origen, Estatus)&#xA;values (getdate(), 'EXCEL','CORRECTO')&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Bitacora incorrecta"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{9A7D4EAF-408A-47E1-A135-6D45E2A48A6F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bitacora incorrecta"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+          SQLTask:SqlStatementSource="use Aerolinea_ISO931&#xA;go&#xA;&#xA;insert into bitacora (FechaHora, Origen, Estatus)&#xA;Values (GETDATE(), 'TXT', 'INCORRECTO')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Bitacora incorrecta csv"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{549f8494-309d-422c-b3b0-9f99e2f9d20a}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bitacora incorrecta csv"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+          SQLTask:SqlStatementSource="use Aerolinea_ISO931&#xA;go&#xA;&#xA;insert into bitacora (FechaHora, Origen, Estatus)&#xA;Values (GETDATE(), 'csv', 'INCORRECTO')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Bitacora incorrecta EXCEL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{3e799ef1-43b5-44c3-9f51-9475cd8a0a50}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bitacora incorrecta EXCEL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86DAE48D-3BD1-4FD1-8D5D-5730C19145CB}"
+          SQLTask:SqlStatementSource="use Aerolinea_ISO931&#xA;go&#xA;&#xA;insert into bitacora (FechaHora, Origen, Estatus)&#xA;Values (GETDATE(), 'EXCEL', 'INCORRECTO')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insercion datos Excel"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{59BB4CF0-040F-450B-9A62-C39BFDE6CC40}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insercion datos Excel"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Insercion datos Excel\Escritura en tabla destino SQL"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Escritura en tabla destino SQL"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Aerolinea]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Apellido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Apellido"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Apellido]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Apellido]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Fecha-Vuelo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha-Vuelo"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha-Vuelo]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Nombre"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Nombre]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Sexo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sexo"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sexo]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Sexo]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Pasaport]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pasaport"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaporte]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Pasaport]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Pasaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pasaje"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaje]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Pasaje]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Destino]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Destino"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Destino]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Destino]" />
+                    <inputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[NumAvion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NumAvion"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumAvion]"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[NumAvion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaporte]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaporte" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaje" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="Destino" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="NumAvion" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha-Vuelo]"
+                      dataType="dbDate"
+                      name="Fecha-Vuelo" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Insercion datos Excel\Lectura Excel"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="3082"
+              name="Lectura Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insercion datos Excel\Lectura Excel.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[TXT]"
+                  connectionManagerRefId="Package.ConnectionManagers[TXT]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaje]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Pasaje]"
+                      name="Pasaje"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Pasaport]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaport]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Pasaport]"
+                      name="Pasaport"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Destino]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Destino]"
+                      name="Destino"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[NumAvion]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[NumAvion]"
+                      name="NumAvion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Apellido]"
+                      name="Apellido"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                      name="Sexo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha-Vuelo]"
+                      length="50"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]"
+                      name="Fecha-Vuelo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pasaje" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaport]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pasaport" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Destino" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NumAvion" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha-Vuelo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha-Vuelo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Insercion datos Excel.Paths[Salida de origen de archivo plano]"
+              endId="Package\Insercion datos Excel\Escritura en tabla destino SQL.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Insercion datos Excel\Lectura Excel.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insercion datos TXT"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{14874ABA-C09B-448F-AB8B-E4308A2A8D28}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insercion datos TXT"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Escritura en la tabla destino SQL"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Aerolinea]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Pasaporte]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pasaporte"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaporte]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Pasaporte]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Nombre"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nombre]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Apellido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Apellido"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Apellido]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Apellido]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Sexo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sexo"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sexo]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Sexo]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Pasaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Pasaje"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaje]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Pasaje]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Destino]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Destino"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Destino]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Destino]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[NumAvion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NumAvion"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumAvion]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[NumAvion]" />
+                    <inputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].Columns[Fecha-Vuelo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha-Vuelo"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha-Vuelo]"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaporte]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaporte" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaje" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="Destino" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="NumAvion" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha-Vuelo]"
+                      dataType="dbDate"
+                      name="Fecha-Vuelo" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Insercion datos TXT\Lectura a archivo plano"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="3082"
+              name="Lectura a archivo plano"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insercion datos TXT\Lectura a archivo plano.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexion a archivo plano]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexion a archivo plano]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Pasaporte]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaporte]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Pasaporte]"
+                      name="Pasaporte"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Apellido]"
+                      name="Apellido"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                      name="Sexo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaje]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Pasaje]"
+                      name="Pasaje"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Destino]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Destino]"
+                      name="Destino"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NumAvion]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[NumAvion]"
+                      name="NumAvion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha-Vuelo]"
+                      length="50"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]"
+                      name="Fecha-Vuelo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaporte]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pasaporte" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Pasaje" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Destino" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NumAvion" />
+                    <externalMetadataColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha-Vuelo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha-Vuelo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Insercion datos TXT.Paths[Salida de origen de archivo plano]"
+              endId="Package\Insercion datos TXT\Escritura en la tabla destino SQL.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Insercion datos TXT\Lectura a archivo plano.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{CE427B5A-1B03-44E6-B79A-C0EA2318B527}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Escritura csv en tabla SQL"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Aerolinea]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Aerolinea_ISO931]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[Apellido]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Apellido"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Apellido]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Apellido]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[Sexo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Sexo"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sexo]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Sexo]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Nombre"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Nombre]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[Pasaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Pasaje"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaje]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Pasaje]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[Destino]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="Destino"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Destino]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Destino]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[NumAvion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="NumAvion"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumAvion]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[NumAvion]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[Fecha-Vuelo]"
+                      cachedDataType="date"
+                      cachedName="Fecha-Vuelo"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha-Vuelo]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].Columns[ Pasaport]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName=" Pasaport"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaporte]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[ Pasaport]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaporte]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaporte" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaje" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="Destino" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="NumAvion" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha-Vuelo]"
+                      dataType="dbDate"
+                      name="Fecha-Vuelo" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Lectura csv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="3082"
+              name="Lectura csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Lectura csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Apellido]"
+                      name="Apellido"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[ Pasaport]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[ Pasaport]"
+                      length="10"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[ Pasaport]"
+                      name=" Pasaport"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                      length="1"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Sexo]"
+                      name="Sexo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaje]"
+                      length="10"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Pasaje]"
+                      name="Pasaje"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha-Vuelo]"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Fecha-Vuelo]"
+                      name="Fecha-Vuelo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Destino]"
+                      length="15"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[Destino]"
+                      name="Destino"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[NumAvion]"
+                      length="10"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].Columns[NumAvion]"
+                      name="NumAvion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Apellido" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[ Pasaport]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name=" Pasaport" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Pasaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pasaje" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha-Vuelo]"
+                      dataType="date"
+                      name="Fecha-Vuelo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[Destino]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="Destino" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano].ExternalColumns[NumAvion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="NumAvion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+              endId="Package\Tarea Flujo de datos\Escritura csv en tabla SQL.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo de datos\Lectura csv.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{7D047CC3-5DAB-48B9-94AC-ACE9B438D33E}"
+      DTS:From="Package\Insercion datos TXT"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Insercion datos Excel"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6823C3FD-7C80-481F-8835-E8250BA859C5}"
+      DTS:From="Package\Insercion datos TXT"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Bitacora Correcta" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{CCB40325-062A-4E4B-8192-2E0DFCA1B4A3}"
+      DTS:From="Package\Insercion datos TXT"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Bitacora incorrecta"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{AD0932C0-79F8-4EDC-9F44-DD8BB76F843A}"
+      DTS:From="Package\Insercion datos Excel"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\Bitacora Correcta EXCEL" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{33D30377-032C-4E9C-B167-1C061FECE1E7}"
+      DTS:From="Package\Insercion datos Excel"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\Bitacora incorrecta EXCEL"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{2946115C-179F-41CD-AA6C-0F3D33B179CF}"
+      DTS:From="Package\Insercion datos Excel"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\Tarea Flujo de datos"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{C22446F3-0A0B-4E94-A0D8-5BF1E1F6B1BB}"
+      DTS:From="Package\Tarea Flujo de datos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\Bitacora Correcta csv" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{E8F447A5-FF0B-4E44-986D-D777510CF426}"
+      DTS:From="Package\Tarea Flujo de datos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 7"
+      DTS:To="Package\Bitacora incorrecta csv"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Bitacora Correcta"
+          TopLeft="466,67" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Bitacora incorrecta"
+          TopLeft="459,168" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Insercion datos TXT"
+          TopLeft="13,33" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="190,54">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="276,34"
+              Start="0,0"
+              End="268.5,34">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="134,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="134,0"
+                    Point2="138,0"
+                    Point3="138,4" />
+                  <mssgle:LineSegment
+                    End="138,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="138,30"
+                    Point2="138,34"
+                    Point3="142,34" />
+                  <mssgle:LineSegment
+                    End="268.5,34" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="129.666666666667,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="414.833333333333,93"
+              Start="0,0"
+              End="414.833333333333,85.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.6998880179171" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.6998880179171"
+                    Point2="0,37.6998880179171"
+                    Point3="4,37.6998880179171" />
+                  <mssgle:LineSegment
+                    End="410.833333333333,37.6998880179171" />
+                  <mssgle:CubicBezierSegment
+                    Point1="410.833333333333,37.6998880179171"
+                    Point2="414.833333333333,37.6998880179171"
+                    Point3="414.833333333333,41.6998880179171" />
+                  <mssgle:LineSegment
+                    End="414.833333333333,85.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="195.887975260417,42.6998880179171,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Insercion datos Excel"
+          TopLeft="115,235" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="73.3333333333333,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133.166666666667,160"
+              Start="0,0"
+              End="133.166666666667,152.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.8600223964166" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60.8600223964166"
+                    Point2="0,64.8600223964166"
+                    Point3="4,64.8600223964166" />
+                  <mssgle:LineSegment
+                    End="129.166666666667,64.8600223964166" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129.166666666667,64.8600223964166"
+                    Point2="133.166666666667,64.8600223964166"
+                    Point3="133.166666666667,68.8600223964166" />
+                  <mssgle:LineSegment
+                    End="133.166666666667,152.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="42.4288802083333,69.8600223964166,48.30890625,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Bitacora incorrecta EXCEL"
+          TopLeft="700,361" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Bitacora Correcta EXCEL"
+          TopLeft="662,230" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="298,253.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="364,0"
+              Start="0,0"
+              End="356.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="356.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="206.5,277">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="598.5,84"
+              Start="0,0"
+              End="598.5,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38"
+                    Point2="0,42"
+                    Point3="4,42" />
+                  <mssgle:LineSegment
+                    End="594.5,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="594.5,42"
+                    Point2="598.5,42"
+                    Point3="598.5,46" />
+                  <mssgle:LineSegment
+                    End="598.5,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="287.72130859375,47,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="162,457" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="177.333333333333,277">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.6666666666667,180"
+              Start="0,0"
+              End="74.6666666666667,172.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.9360780065005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68.9360780065005"
+                    Point2="0,72.9360780065005"
+                    Point3="4,72.9360780065005" />
+                  <mssgle:LineSegment
+                    End="70.6666666666667,72.9360780065005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70.6666666666667,72.9360780065005"
+                    Point2="74.6666666666667,72.9360780065005"
+                    Point3="74.6666666666667,76.9360780065005" />
+                  <mssgle:LineSegment
+                    End="74.6666666666667,172.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.1788802083333,77.9360780065005,48.30890625,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Bitacora incorrecta csv"
+          TopLeft="539,572" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Bitacora Correcta csv"
+          TopLeft="484,463" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="342,481">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="142,0"
+              Start="0,0"
+              End="134.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="134.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 7]"
+          TopLeft="252,499">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="382,73"
+              Start="0,0"
+              End="382,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="4,36.5" />
+                  <mssgle:LineSegment
+                    End="378,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="378,36.5"
+                    Point2="382,36.5"
+                    Point3="382,40.5" />
+                  <mssgle:LineSegment
+                    End="382,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="179.47130859375,41.5,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Insercion datos TXT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Insercion datos TXT\Escritura en la tabla destino SQL"
+          TopLeft="644,314" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Insercion datos TXT\Lectura a archivo plano"
+          TopLeft="397,126" />
+        <EdgeLayout
+          Id="Package\Insercion datos TXT.Paths[Salida de origen de archivo plano]"
+          TopLeft="493.5,168">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="270,146"
+              Start="0,0"
+              End="270,138.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,69"
+                    Point2="0,73"
+                    Point3="4,73" />
+                  <mssgle:LineSegment
+                    End="266,73" />
+                  <mssgle:CubicBezierSegment
+                    Point1="266,73"
+                    Point2="270,73"
+                    Point3="270,77" />
+                  <mssgle:LineSegment
+                    End="270,138.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Insercion datos TXT\Escritura en la tabla destino SQL">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Insercion datos Excel">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Insercion datos Excel\Lectura Excel"
+          TopLeft="202,143" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Insercion datos Excel\Escritura en tabla destino SQL"
+          TopLeft="505,347" />
+        <EdgeLayout
+          Id="Package\Insercion datos Excel.Paths[Salida de origen de archivo plano]"
+          TopLeft="275,185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="344,162"
+              Start="0,0"
+              End="344,154.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,77"
+                    Point2="0,81"
+                    Point3="4,81" />
+                  <mssgle:LineSegment
+                    End="340,81" />
+                  <mssgle:CubicBezierSegment
+                    Point1="340,81"
+                    Point2="344,81"
+                    Point3="344,85" />
+                  <mssgle:LineSegment
+                    End="344,154.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Insercion datos Excel\Escritura en tabla destino SQL">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Tarea Flujo de datos\Lectura csv"
+          TopLeft="240,95" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Tarea Flujo de datos\Escritura csv en tabla SQL"
+          TopLeft="682,371" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+          TopLeft="307.5,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="479,234"
+              Start="0,0"
+              End="479,226.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,113" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,113"
+                    Point2="0,117"
+                    Point3="4,117" />
+                  <mssgle:LineSegment
+                    End="475,117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="475,117"
+                    Point2="479,117"
+                    Point3="479,121" />
+                  <mssgle:LineSegment
+                    End="479,226.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Escritura csv en tabla SQL">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
